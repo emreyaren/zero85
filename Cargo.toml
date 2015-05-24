@@ -5,3 +5,4 @@ authors = ["Mehmet Kose"]
 
 [dev-dependencies]
 quickcheck = "0.2.18"
+documentation = "http://decafbad.github.io/z85-rust/doc/z85/index.html"
