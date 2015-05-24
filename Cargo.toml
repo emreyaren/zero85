@@ -1,6 +1,6 @@
 [package]
 name = "z85"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Mehmet Kose"]
 documentation = "http://decafbad.github.io/z85-rust/doc/z85/index.html"
 
