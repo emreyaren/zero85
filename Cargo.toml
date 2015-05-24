@@ -1,7 +1,7 @@
 [package]
 name = "z85"
-version = "0.1.0"
-authors = ["mehmet"]
+version = "0.1.1"
+authors = ["Mehmet Kose"]
 
 [dev-dependencies]
-quickcheck = "*"
+quickcheck = "0.2.18"
