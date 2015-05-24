@@ -68,6 +68,7 @@ impl fmt::Display for FromZ85Error {
 
 #[derive(Clone, Copy)]
 pub enum ToZ85Error {
+    /// The input had an invalid length
     InvalidZ85InputSize(usize),
 }
 
@@ -106,6 +107,10 @@ pub trait ToZ85 {
 }
 
 impl FromZ85 for str {
+    /// Convert any z85 encoded string
+    /// to the byte values it encodes.
+    /// You can use the `String::from_utf8` function to turn a `Vec<u8>` into a
+    /// string with characters corresponding to those values.
     fn from_z85(&self) -> Result<Vec<u8>, FromZ85Error> {
         self.as_bytes().from_z85()
     }
@@ -151,6 +156,7 @@ impl FromZ85 for [u8] {
 
 
 impl ToZ85 for [u8] {
+    /// Turn a vector of `u8` bytes into a base64 string.
     fn to_z85(&self) -> Result<String, ToZ85Error> {
         let len = self.len();
 

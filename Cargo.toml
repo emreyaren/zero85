@@ -2,7 +2,7 @@
 name = "z85"
 version = "0.1.1"
 authors = ["Mehmet Kose"]
+documentation = "http://decafbad.github.io/z85-rust/doc/z85/index.html"
 
 [dev-dependencies]
 quickcheck = "0.2.18"
-documentation = "http://decafbad.github.io/z85-rust/doc/z85/index.html"
