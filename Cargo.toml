@@ -2,12 +2,9 @@
 name = "z85"
 version = "0.1.2"
 authors = ["Mehmet Kose"]
-<<<<<<< HEAD
 description = "ZeroMQ's base85 algorithm"
 license = "MIT/Apache-2.0"
 repository = "https://github.com/decafbad/z85-rust"
-=======
->>>>>>> master
 documentation = "http://decafbad.github.io/z85-rust/doc/z85/index.html"
 
 [dev-dependencies]
