@@ -222,6 +222,7 @@
 <span id="180">180</span>
 <span id="181">181</span>
 <span id="182">182</span>
+<span id="183">183</span>
 </pre><pre class='rust '>
 <span class='comment'>// Based on rustc_serialize::base64</span>
 <span class='comment'>// and also ZeroMQ&#39;s reference implementation</span>
@@ -293,6 +294,7 @@
 
 <span class='attribute'>#[<span class='ident'>derive</span>(<span class='ident'>Clone</span>, <span class='ident'>Copy</span>)]</span>
 <span class='kw'>pub</span> <span class='kw'>enum</span> <span class='ident'>ToZ85Error</span> {
+    <span class='doccomment'>/// The input had an invalid length</span>
     <span class='ident'>InvalidZ85InputSize</span>(<span class='ident'>usize</span>),
 }
 
