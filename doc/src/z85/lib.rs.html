@@ -223,6 +223,11 @@
 <span id="181">181</span>
 <span id="182">182</span>
 <span id="183">183</span>
+<span id="184">184</span>
+<span id="185">185</span>
+<span id="186">186</span>
+<span id="187">187</span>
+<span id="188">188</span>
 </pre><pre class='rust '>
 <span class='comment'>// Based on rustc_serialize::base64</span>
 <span class='comment'>// and also ZeroMQ&#39;s reference implementation</span>
@@ -333,6 +338,10 @@
 }
 
 <span class='kw'>impl</span> <span class='ident'>FromZ85</span> <span class='kw'>for</span> <span class='ident'>str</span> {
+    <span class='doccomment'>/// Convert any z85 encoded string</span>
+    <span class='doccomment'>/// to the byte values it encodes.</span>
+    <span class='doccomment'>/// You can use the `String::from_utf8` function to turn a `Vec&lt;u8&gt;` into a</span>
+    <span class='doccomment'>/// string with characters corresponding to those values.</span>
     <span class='kw'>fn</span> <span class='ident'>from_z85</span>(<span class='kw-2'>&amp;</span><span class='self'>self</span>) <span class='op'>-&gt;</span> <span class='prelude-ty'>Result</span><span class='op'>&lt;</span><span class='ident'>Vec</span><span class='op'>&lt;</span><span class='ident'>u8</span><span class='op'>&gt;</span>, <span class='ident'>FromZ85Error</span><span class='op'>&gt;</span> {
         <span class='self'>self</span>.<span class='ident'>as_bytes</span>().<span class='ident'>from_z85</span>()
     }
@@ -378,6 +387,7 @@
 
 
 <span class='kw'>impl</span> <span class='ident'>ToZ85</span> <span class='kw'>for</span> [<span class='ident'>u8</span>] {
+    <span class='doccomment'>/// Turn a vector of `u8` bytes into a base64 string.</span>
     <span class='kw'>fn</span> <span class='ident'>to_z85</span>(<span class='kw-2'>&amp;</span><span class='self'>self</span>) <span class='op'>-&gt;</span> <span class='prelude-ty'>Result</span><span class='op'>&lt;</span><span class='ident'>String</span>, <span class='ident'>ToZ85Error</span><span class='op'>&gt;</span> {
         <span class='kw'>let</span> <span class='ident'>len</span> <span class='op'>=</span> <span class='self'>self</span>.<span class='ident'>len</span>();
 
