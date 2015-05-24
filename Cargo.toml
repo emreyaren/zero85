@@ -5,6 +5,7 @@ authors = ["Mehmet Kose"]
 description = "ZeroMQ's base85 algorithm"
 license = "MIT/Apache-2.0"
 repository = "https://github.com/decafbad/z85-rust"
+documentation = "http://decafbad.github.io/z85-rust/doc/z85/index.html"
 
 [dev-dependencies]
 quickcheck = "0.2.18"
