@@ -8,4 +8,4 @@ description = "Rust implementation of ZeroMQ's base85 algorithm."
 license = "MIT/Apache-2.0"
 
 [dev-dependencies]
-quickcheck = "*"
+quickcheck = "0.2.24"
