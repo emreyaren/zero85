@@ -1,7 +1,7 @@
-extern crate z85;
+extern crate zero85;
 extern crate quickcheck;
 
-use z85::*;
+use zero85::*;
 
 use quickcheck::quickcheck;
 use quickcheck::TestResult;
