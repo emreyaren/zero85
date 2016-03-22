@@ -1,11 +1,10 @@
 [package]
-name = "z85"
+name = "zero85"
 version = "0.1.5"
 authors = ["H.Emre Yaren"]
-documentation = "http://decafbad.github.io/z85-rust/doc/z85/index.html"
-repository = "https://github.com/emreyaren/z85-rust"
+repository = "https://github.com/emreyaren/zero85"
 description = "Rust implementation of ZeroMQ's base85 algorithm."
 license = "MIT/Apache-2.0"
 
 [dev-dependencies]
-quickcheck = "0.2.24"
+quickcheck = "*"

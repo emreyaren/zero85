@@ -1,5 +1,5 @@
 [root]
-name = "z85"
+name = "zero85"
 version = "0.1.5"
 dependencies = [
  "quickcheck 0.2.27 (registry+https://github.com/rust-lang/crates.io-index)",
