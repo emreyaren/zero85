@@ -1,6 +1,6 @@
 [package]
 name = "zero85"
-version = "0.1.5"
+version = "0.2.0"
 authors = ["H.Emre Yaren"]
 repository = "https://github.com/emreyaren/zero85"
 description = "Rust implementation of ZeroMQ's base85 algorithm."

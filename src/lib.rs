@@ -145,8 +145,7 @@ impl FromZ85 for [u8] {
                 block_num = block_num / 256;
             }
             out_chunk.reverse();
-            //FIXME after Vec::push_all becomes stable
-            out_vec.extend(out_chunk.iter().cloned());
+            out_vec.extend_from_slice(&out_chunk);
             pos = pos + 5;
         }
 
@@ -177,8 +176,7 @@ impl ToZ85 for [u8] {
                 block_num = block_num / 85;
             }
             out_chunk.reverse();
-            //FIXME after Vec::push_all becomes stable
-            out_vec.extend(out_chunk.iter().cloned())
+            out_vec.extend_from_slice(&out_chunk);
         }
 
 
